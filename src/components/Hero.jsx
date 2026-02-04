@@ -127,9 +127,11 @@ const Hero = () => {
               {/* Imagem principal */}
               <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=600&h=700&fit=crop"
-                  alt="Crianças felizes aprendendo"
+                  src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=600&h=700&fit=crop&q=80"
+                  alt="Crianças felizes aprendendo no Colégio Materna Kids em Itajubá"
                   className="w-full h-[500px] object-cover"
+                  fetchpriority="high"
+                  decoding="async"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-turquesa/30 to-transparent" />
               </div>

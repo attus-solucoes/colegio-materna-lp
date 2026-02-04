@@ -1,0 +1,12 @@
+# Robots.txt - Colégio Materna Kids
+# https://colegiomaterna.com.br
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://colegiomaterna.com.br/sitemap.xml
+
+# Bloquear arquivos desnecessários
+Disallow: /assets/*.js.map
+Disallow: /assets/*.css.map

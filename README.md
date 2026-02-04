@@ -1,16 +1,113 @@
-# React + Vite
+# 🏫 Colégio Materna Kids - Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing Page institucional do Colégio Materna Kids, escola especializada em educação infantil em Itajubá - MG.
 
-Currently, two official plugins are available:
+## 🚀 Stack Tecnológica
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Framework:** React 18 + Vite
+- **Estilização:** Tailwind CSS
+- **Animações:** Framer Motion
+- **Ícones:** Lucide React
+- **Hospedagem:** Vercel
 
-## React Compiler
+## 📦 Instalação
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+# Clonar repositório
+git clone https://github.com/seu-usuario/colegio-materna-lp.git
 
-## Expanding the ESLint configuration
+# Entrar na pasta
+cd colegio-materna-lp
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Instalar dependências
+npm install
+
+# Rodar em desenvolvimento
+npm run dev
+
+# Build para produção
+npm run build
+```
+
+## 🗂️ Estrutura do Projeto
+
+```
+src/
+├── components/
+│   ├── Navbar.jsx        # Menu de navegação
+│   ├── Hero.jsx          # Seção principal
+│   ├── PropostaValor.jsx # Diferenciais
+│   ├── Sobre.jsx         # Sobre a escola
+│   ├── Metodologia.jsx   # Proposta pedagógica
+│   ├── Programas.jsx     # Programas oferecidos
+│   ├── Estrutura.jsx     # Galeria de fotos
+│   ├── Depoimentos.jsx   # Depoimentos de pais
+│   ├── FAQ.jsx           # Perguntas frequentes
+│   ├── Contato.jsx       # Formulário e mapa
+│   ├── Footer.jsx        # Rodapé
+│   └── WhatsAppButton.jsx # Botão flutuante
+├── App.jsx
+├── main.jsx
+└── index.css
+
+public/
+├── logo.jpg              # Logo do colégio
+├── robots.txt            # SEO
+└── sitemap.xml           # SEO
+```
+
+## 🎨 Paleta de Cores
+
+| Cor | HEX | Uso |
+|-----|-----|-----|
+| Turquesa | `#00C9D7` | Cor principal |
+| Amarelo | `#FFE74C` | Destaques |
+| Laranja | `#FF6B35` | CTAs secundários |
+| Rosa | `#FFB3C1` | Detalhes |
+| Cinza | `#2B2B2B` | Textos |
+
+## 🔧 Configurações
+
+### Variáveis importantes
+
+- **WhatsApp:** `553536218735`
+- **Endereço:** Rua Alcídes Faria, 214 - Varginha, Itajubá - MG
+- **Instagram:** @colegiomaternakids
+
+### Domínio
+
+Quando configurar o domínio próprio, atualizar:
+- `index.html` - canonical URL e Open Graph
+- `sitemap.xml` - URLs
+- `robots.txt` - Sitemap URL
+
+## 📱 Responsividade
+
+- Mobile: < 640px
+- Tablet: 640px - 1024px
+- Desktop: > 1024px
+
+## ⚡ Performance
+
+- ✅ Lazy loading em imagens
+- ✅ Preconnect para fonts
+- ✅ Cache headers configurados
+- ✅ Imagens otimizadas (quality 80)
+- ✅ Code splitting automático (Vite)
+
+## 🔍 SEO
+
+- ✅ Meta tags completas
+- ✅ Open Graph / Twitter Cards
+- ✅ Schema.org LocalBusiness
+- ✅ Sitemap.xml
+- ✅ Robots.txt
+- ✅ Alt text em todas as imagens
+
+## 📄 Licença
+
+Projeto desenvolvido pela [Solvia Hub](https://solviahub.com.br) 🦊🚀
+
+---
+
+**URL de Produção:** https://colegio-materna-lp-one1.vercel.app/

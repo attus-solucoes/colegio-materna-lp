@@ -9,32 +9,32 @@ const Estrutura = () => {
 
   const fotos = [
     {
-      url: "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&h=400&fit=crop",
+      url: "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&h=400&fit=crop&q=80",
       titulo: "Sala de Atividades",
       descricao: "Ambiente amplo e colorido"
     },
     {
-      url: "https://images.unsplash.com/photo-1576495199011-eb94736d05d6?w=600&h=400&fit=crop",
+      url: "https://images.unsplash.com/photo-1576495199011-eb94736d05d6?w=600&h=400&fit=crop&q=80",
       titulo: "Área Externa",
       descricao: "Espaço para brincar ao ar livre"
     },
     {
-      url: "https://images.unsplash.com/photo-1567057419565-4349c49d8a04?w=600&h=400&fit=crop",
+      url: "https://images.unsplash.com/photo-1567057419565-4349c49d8a04?w=600&h=400&fit=crop&q=80",
       titulo: "Parquinho",
       descricao: "Diversão segura para todas as idades"
     },
     {
-      url: "https://images.unsplash.com/photo-1560440021-33f9b867899d?w=600&h=400&fit=crop",
+      url: "https://images.unsplash.com/photo-1560440021-33f9b867899d?w=600&h=400&fit=crop&q=80",
       titulo: "Biblioteca",
       descricao: "Cantinho da leitura"
     },
     {
-      url: "https://images.unsplash.com/photo-1564429238877-1790b696c06a?w=600&h=400&fit=crop",
+      url: "https://images.unsplash.com/photo-1564429238877-1790b696c06a?w=600&h=400&fit=crop&q=80",
       titulo: "Sala do Berçário",
       descricao: "Aconchego para os pequenos"
     },
     {
-      url: "https://images.unsplash.com/photo-1597074866923-dc0589150358?w=600&h=400&fit=crop",
+      url: "https://images.unsplash.com/photo-1597074866923-dc0589150358?w=600&h=400&fit=crop&q=80",
       titulo: "Refeitório",
       descricao: "Refeições saudáveis"
     }
@@ -80,8 +80,10 @@ const Estrutura = () => {
             >
               <img
                 src={foto.url}
-                alt={foto.titulo}
+                alt={`${foto.titulo} - ${foto.descricao} no Colégio Materna Kids`}
                 className="w-full h-48 md:h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                loading="lazy"
+                decoding="async"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4 text-white">

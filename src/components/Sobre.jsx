@@ -20,27 +20,35 @@ const Sobre = () => {
             <div className="grid grid-cols-2 gap-4">
               <motion.img
                 whileHover={{ scale: 1.05 }}
-                src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400&h=500&fit=crop"
-                alt="Criança aprendendo"
+                src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400&h=500&fit=crop&q=80"
+                alt="Criança aprendendo em ambiente escolar acolhedor"
                 className="rounded-2xl shadow-lg w-full h-64 object-cover"
+                loading="lazy"
+                decoding="async"
               />
               <motion.img
                 whileHover={{ scale: 1.05 }}
-                src="https://images.unsplash.com/photo-1544776193-352d25ca82cd?w=400&h=300&fit=crop"
-                alt="Atividades lúdicas"
+                src="https://images.unsplash.com/photo-1544776193-352d25ca82cd?w=400&h=300&fit=crop&q=80"
+                alt="Atividades lúdicas na educação infantil"
                 className="rounded-2xl shadow-lg w-full h-48 object-cover mt-12"
+                loading="lazy"
+                decoding="async"
               />
               <motion.img
                 whileHover={{ scale: 1.05 }}
-                src="https://images.unsplash.com/photo-1564429238877-1790b696c06a?w=400&h=300&fit=crop"
-                alt="Sala de aula"
+                src="https://images.unsplash.com/photo-1564429238877-1790b696c06a?w=400&h=300&fit=crop&q=80"
+                alt="Sala de aula colorida para crianças"
                 className="rounded-2xl shadow-lg w-full h-48 object-cover -mt-8"
+                loading="lazy"
+                decoding="async"
               />
               <motion.img
                 whileHover={{ scale: 1.05 }}
-                src="https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?w=400&h=500&fit=crop"
-                alt="Crianças brincando"
+                src="https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?w=400&h=500&fit=crop&q=80"
+                alt="Crianças brincando e aprendendo juntas"
                 className="rounded-2xl shadow-lg w-full h-64 object-cover"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             
