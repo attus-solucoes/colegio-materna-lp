@@ -12,21 +12,21 @@ const Hero = () => {
       <div className="absolute bottom-20 right-10 w-96 h-96 bg-rosa/20 rounded-full blur-3xl animate-blob animation-delay-2000" />
       <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-laranja/10 rounded-full blur-3xl animate-blob animation-delay-4000" />
       
-      {/* Círculos decorativos */}
+      {/* Círculos decorativos - mais suaves */}
       <motion.div 
-        animate={{ y: [0, -20, 0] }}
-        transition={{ duration: 4, repeat: Infinity }}
-        className="absolute top-32 right-20 w-16 h-16 bg-amarelo rounded-full hidden lg:block"
+        animate={{ y: [0, -10, 0] }}
+        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+        className="absolute top-32 right-20 w-16 h-16 bg-amarelo rounded-full hidden lg:block opacity-80"
       />
       <motion.div 
-        animate={{ y: [0, 20, 0] }}
-        transition={{ duration: 3, repeat: Infinity }}
-        className="absolute bottom-40 left-20 w-12 h-12 bg-rosa rounded-full hidden lg:block"
+        animate={{ y: [0, 10, 0] }}
+        transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+        className="absolute bottom-40 left-20 w-12 h-12 bg-rosa rounded-full hidden lg:block opacity-80"
       />
       <motion.div 
-        animate={{ y: [0, -15, 0] }}
-        transition={{ duration: 5, repeat: Infinity }}
-        className="absolute top-1/2 right-40 w-8 h-8 bg-laranja rounded-full hidden lg:block"
+        animate={{ y: [0, -8, 0] }}
+        transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
+        className="absolute top-1/2 right-40 w-8 h-8 bg-azul-claro rounded-full hidden lg:block opacity-80"
       />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
@@ -55,7 +55,7 @@ const Hero = () => {
               Aqui seu filho aprende com{' '}
               <span className="text-amarelo">amor</span>,{' '}
               <span className="text-rosa">propósito</span> e{' '}
-              <span className="text-laranja">alegria</span>
+              <span className="text-azul-claro">alegria</span>
             </motion.h1>
             
             <motion.p 
@@ -110,7 +110,7 @@ const Hero = () => {
                 <div className="text-white/80 text-sm">Famílias atendidas</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-laranja">100%</div>
+                <div className="text-3xl font-bold text-azul-claro">100%</div>
                 <div className="text-white/80 text-sm">Dedicação</div>
               </div>
             </motion.div>

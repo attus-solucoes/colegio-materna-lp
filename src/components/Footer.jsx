@@ -11,11 +11,7 @@ const Footer = () => {
           {/* Logo e Descrição */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-4">
-              <img src="/logo.jpg" alt="Colégio Materna Kids" className="h-14 w-14 rounded-full" />
-              <div>
-                <span className="font-bold text-xl">Colégio Materna</span>
-                <span className="text-turquesa text-sm block">Kids</span>
-              </div>
+              <img src="/logo.png" alt="Colégio Materna Kids" className="h-16 object-contain" />
             </div>
             <p className="text-gray-400 mb-6 max-w-md">
               Especialistas em primeira infância. Educação com amor, propósito e alegria 

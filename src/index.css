@@ -10,12 +10,12 @@ html {
 
 body {
   font-family: 'Inter', system-ui, sans-serif;
-  color: #2B2B2B;
+  color: #4A4A4A;
 }
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
@@ -23,22 +23,22 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #00C9D7;
-  border-radius: 4px;
+  background: #5DBEB3;
+  border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #00A8B5;
+  background: #4BA89E;
 }
 
-/* Animations */
+/* Animações suaves - otimizadas para mobile */
 @keyframes float {
   0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
+  50% { transform: translateY(-6px); }
 }
 
 .animate-float {
-  animation: float 3s ease-in-out infinite;
+  animation: float 4s ease-in-out infinite;
 }
 
 @keyframes blob {
@@ -47,15 +47,35 @@ body {
 }
 
 .animate-blob {
-  animation: blob 7s ease-in-out infinite;
+  animation: blob 10s ease-in-out infinite;
 }
 
-/* WhatsApp button pulse */
+/* WhatsApp button pulse - mais sutil */
 @keyframes pulse-whatsapp {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
-  50% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+  0%, 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.4); }
+  50% { box-shadow: 0 0 0 10px rgba(37, 211, 102, 0); }
 }
 
 .animate-pulse-whatsapp {
-  animation: pulse-whatsapp 2s infinite;
+  animation: pulse-whatsapp 2.5s infinite;
+}
+
+/* Reduzir animações em mobile para performance */
+@media (max-width: 768px) {
+  .animate-float {
+    animation: none;
+  }
+  
+  .animate-blob {
+    animation: none;
+  }
+}
+
+/* Preferência do usuário por menos movimento */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

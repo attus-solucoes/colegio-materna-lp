@@ -34,16 +34,12 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <a href="#inicio" className="flex items-center gap-3">
+          <a href="#inicio" className="flex items-center gap-2">
             <img 
-              src="/logo.jpg" 
+              src="/logo.png" 
               alt="Colégio Materna Kids" 
-              className="h-12 w-12 rounded-full object-cover"
+              className="h-12 object-contain"
             />
-            <div className={`hidden sm:block transition-colors ${scrolled ? 'text-cinza' : 'text-white'}`}>
-              <span className="font-bold text-lg">Colégio Materna</span>
-              <span className="text-turquesa text-sm block -mt-1">Kids</span>
-            </div>
           </a>
 
           {/* Desktop Menu */}

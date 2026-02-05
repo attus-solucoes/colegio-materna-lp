@@ -9,38 +9,33 @@ const Depoimentos = () => {
 
   const depoimentos = [
     {
-      nome: "Fernanda Oliveira",
-      relacao: "Mãe do Pedro, 3 anos",
-      foto: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop",
-      texto: "O Colégio Materna transformou a vida do meu filho. Ele chegava chorando e hoje não quer vir embora! A equipe é extremamente cuidadosa e atenciosa. Recomendo de olhos fechados.",
+      nome: "Família da Antonella",
+      relacao: "Aluna formada",
+      texto: "Desde o primeiro dia em que pisamos no Materna, fomos recebidos com tanto carinho que logo de cara sentimos que tínhamos feito a escolha certa. O Materna sempre nos transmitiu segurança, atenção e um verdadeiro compromisso com a educação feita com amor. A Antonella foi alfabetizada com muita dedicação, no tempo dela, sempre com incentivo e acolhimento.",
       rating: 5
     },
     {
-      nome: "Ricardo Santos",
-      relacao: "Pai da Beatriz, 4 anos",
-      foto: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
-      texto: "A metodologia é incrível! Minha filha desenvolveu muito a autonomia e a comunicação. Os projetos são muito bem pensados e as professoras são apaixonadas pelo que fazem.",
+      nome: "Mãe do Samuel",
+      relacao: "Aluno atual",
+      texto: "Foi a melhor escolha que fizemos para os dois! Agradeço muito a atenção de vocês em cada detalhe, é nítido o desenvolvimento dos dois, principalmente do Samuel, ele se soltou mais. Posso fazer minhas tarefas do dia a dia em paz sabendo que eles estão sendo muito bem cuidados. Alimentação é ótima, só tenho a agradecer em tudo! Gratidão.",
       rating: 5
     },
     {
-      nome: "Camila Mendes",
-      relacao: "Mãe do Lucas, 2 anos",
-      foto: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop",
-      texto: "Procuramos muito antes de encontrar o Materna. A estrutura é excelente, as turmas são pequenas e o acompanhamento é individualizado. Meu filho ama ir para a escola!",
+      nome: "Daniele Lima",
+      relacao: "Mãe de aluna",
+      texto: "Neste ano de 2025, pude acompanhar com muita alegria o desenvolvimento da minha filha. Notei avanços significativos no vocabulário e capacidade de comunicar suas ideias com mais clareza. Além disso, percebi mudanças importantes na socialização e autoestima. Agradeço à equipe Escola Materna Kids pelo cuidado, incentivo e carinho nesse processo.",
       rating: 5
     },
     {
-      nome: "André Costa",
-      relacao: "Pai do Miguel, 1 ano",
-      foto: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop",
-      texto: "Deixar um bebê de 6 meses na escola é muito difícil, mas a equipe do berçário nos transmitiu total segurança. Recebo fotos e atualizações todos os dias. Nota 10!",
+      nome: "Karol",
+      relacao: "Mãe da Isa",
+      texto: "A Isa se desenvolveu muito junto ao colégio. Aprende diversas músicas e canta em casa para nós. Traz detalhes do dia vivido com os coleguinhas. É lindo de se ver! Ela aprendeu a comer coisas que não comia mais em casa, o desfralde foi muito tranquilo pois também tive o incentivo e ajuda da escola. Só tenho a agradecer a atenção e cuidados com minha princesa.",
       rating: 5
     },
     {
-      nome: "Juliana Ferreira",
-      relacao: "Mãe da Sofia, 5 anos",
-      foto: "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=100&h=100&fit=crop",
-      texto: "Minha filha está no Materna desde o berçário e hoje está pronta para o fundamental. O trabalho de alfabetização é excepcional. Gratidão eterna a toda equipe!",
+      nome: "Mãe da Helena",
+      relacao: "Aluna desde 2024",
+      texto: "A Helena está no Colégio Materna Kids desde o início 2024. No início, o processo de adaptação foi muito desafiador para nós, mas graças ao acolhimento, suporte e apoio oferecido pela escola, conseguimos superar essa fase com tranquilidade. Hoje vejo o quanto a Helena se desenvolveu, e principalmente o quanto ela é feliz em fazer parte do Colégio Materna Kids. Tenho a certeza que fizemos a escolha certa! ❤️",
       rating: 5
     }
   ];
@@ -90,13 +85,11 @@ const Depoimentos = () => {
               "{depoimentos[currentIndex].texto}"
             </p>
             
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between flex-wrap gap-4">
               <div className="flex items-center gap-4">
-                <img
-                  src={depoimentos[currentIndex].foto}
-                  alt={depoimentos[currentIndex].nome}
-                  className="w-14 h-14 rounded-full object-cover"
-                />
+                <div className="w-14 h-14 rounded-full bg-gradient-to-br from-turquesa to-azul-claro flex items-center justify-center text-white font-bold text-xl">
+                  {depoimentos[currentIndex].nome.charAt(0)}
+                </div>
                 <div>
                   <h4 className="font-bold text-cinza">{depoimentos[currentIndex].nome}</h4>
                   <p className="text-gray-500 text-sm">{depoimentos[currentIndex].relacao}</p>

@@ -20,13 +20,14 @@ const PropostaValor = () => {
       title: "Turmas Reduzidas",
       description: "Atendimento personalizado com número reduzido de crianças por turma e equipe capacitada.",
       color: "bg-amarelo",
+      textColor: "text-cinza",
       delay: 0.1
     },
     {
       icon: <Sparkles className="w-8 h-8" />,
       title: "Metodologia Ativa",
       description: "A criança como protagonista do seu aprendizado através do brincar e interagir.",
-      color: "bg-laranja",
+      color: "bg-azul-claro",
       delay: 0.2
     },
     {
@@ -34,6 +35,7 @@ const PropostaValor = () => {
       title: "Família no Centro",
       description: "Parceria escola-família como pilar fundamental da educação consciente e positiva.",
       color: "bg-rosa",
+      textColor: "text-cinza",
       delay: 0.3
     }
   ];
@@ -69,7 +71,7 @@ const PropostaValor = () => {
               whileHover={{ y: -10, transition: { duration: 0.3 } }}
               className="group bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100"
             >
-              <div className={`${card.color} w-16 h-16 rounded-2xl flex items-center justify-center text-white mb-5 group-hover:scale-110 transition-transform`}>
+              <div className={`${card.color} w-16 h-16 rounded-2xl flex items-center justify-center ${card.textColor || 'text-white'} mb-5 group-hover:scale-110 transition-transform`}>
                 {card.icon}
               </div>
               <h3 className="text-xl font-bold text-cinza mb-3">{card.title}</h3>

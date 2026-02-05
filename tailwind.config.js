@@ -7,13 +7,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        'turquesa': '#00C9D7',
-        'turquesa-dark': '#00A8B5',
-        'amarelo': '#FFE74C',
-        'laranja': '#FF6B35',
-        'rosa': '#FFB3C1',
-        'cinza': '#2B2B2B',
-        'cinza-claro': '#F5F5F5',
+        // Nova paleta baseada no logo
+        'turquesa': '#5DBEB3',
+        'turquesa-dark': '#4BA89E',
+        'azul-claro': '#7ECCE4',
+        'amarelo': '#F7E55B',
+        'rosa': '#F4B5C4',
+        'cinza': '#4A4A4A',
+        'cinza-claro': '#F8F8F8',
       },
       fontFamily: {
         'sans': ['Inter', 'system-ui', 'sans-serif'],
