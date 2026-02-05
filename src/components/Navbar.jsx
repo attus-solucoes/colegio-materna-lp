@@ -70,6 +70,8 @@ const Navbar = () => {
           <button
             onClick={() => setIsOpen(!isOpen)}
             className={`md:hidden p-2 rounded-lg ${scrolled ? 'text-cinza' : 'text-white'}`}
+            aria-label={isOpen ? 'Fechar menu' : 'Abrir menu'}
+            aria-expanded={isOpen}
           >
             {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>

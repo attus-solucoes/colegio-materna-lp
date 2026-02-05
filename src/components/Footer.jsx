@@ -18,10 +18,22 @@ const Footer = () => {
               para crianças de 4 meses a 5 anos em Itajubá - MG.
             </p>
             <div className="flex gap-4">
-              <a href="https://instagram.com/colegiomaternakids" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/10 hover:bg-turquesa rounded-full flex items-center justify-center transition-colors">
+              <a 
+                href="https://instagram.com/colegiomaternakids" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="w-10 h-10 bg-white/10 hover:bg-turquesa rounded-full flex items-center justify-center transition-colors"
+                aria-label="Siga-nos no Instagram"
+              >
                 <Instagram size={20} />
               </a>
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/10 hover:bg-turquesa rounded-full flex items-center justify-center transition-colors">
+              <a 
+                href="https://facebook.com" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="w-10 h-10 bg-white/10 hover:bg-turquesa rounded-full flex items-center justify-center transition-colors"
+                aria-label="Siga-nos no Facebook"
+              >
                 <Facebook size={20} />
               </a>
             </div>
@@ -29,32 +41,32 @@ const Footer = () => {
 
           {/* Links Rápidos */}
           <div>
-            <h4 className="font-bold text-lg mb-4">Links Rápidos</h4>
+            <h3 className="font-bold text-lg mb-4">Links Rápidos</h3>
             <ul className="space-y-3">
-              <li><a href="#inicio" className="text-gray-400 hover:text-turquesa transition-colors">Início</a></li>
-              <li><a href="#sobre" className="text-gray-400 hover:text-turquesa transition-colors">Sobre Nós</a></li>
-              <li><a href="#metodologia" className="text-gray-400 hover:text-turquesa transition-colors">Metodologia</a></li>
-              <li><a href="#programas" className="text-gray-400 hover:text-turquesa transition-colors">Programas</a></li>
-              <li><a href="#estrutura" className="text-gray-400 hover:text-turquesa transition-colors">Estrutura</a></li>
-              <li><a href="#contato" className="text-gray-400 hover:text-turquesa transition-colors">Contato</a></li>
+              <li><a href="#inicio" className="text-gray-300 hover:text-turquesa transition-colors">Início</a></li>
+              <li><a href="#sobre" className="text-gray-300 hover:text-turquesa transition-colors">Sobre Nós</a></li>
+              <li><a href="#metodologia" className="text-gray-300 hover:text-turquesa transition-colors">Metodologia</a></li>
+              <li><a href="#programas" className="text-gray-300 hover:text-turquesa transition-colors">Programas</a></li>
+              <li><a href="#estrutura" className="text-gray-300 hover:text-turquesa transition-colors">Estrutura</a></li>
+              <li><a href="#contato" className="text-gray-300 hover:text-turquesa transition-colors">Contato</a></li>
             </ul>
           </div>
 
           {/* Contato */}
           <div>
-            <h4 className="font-bold text-lg mb-4">Contato</h4>
+            <h3 className="font-bold text-lg mb-4">Contato</h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin size={20} className="text-turquesa flex-shrink-0 mt-1" />
-                <span className="text-gray-400">Rua Alcídes Faria, 214<br />Varginha, Itajubá - MG<br />37501-058</span>
+                <span className="text-gray-300">Rua Alcídes Faria, 214<br />Varginha, Itajubá - MG<br />37501-058</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={20} className="text-turquesa" />
-                <a href="tel:+553536218735" className="text-gray-400 hover:text-turquesa transition-colors">(35) 3621-8735</a>
+                <a href="tel:+553536218735" className="text-gray-300 hover:text-turquesa transition-colors">(35) 3621-8735</a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={20} className="text-turquesa" />
-                <span className="text-gray-400">contato@colegiomaterna.com.br</span>
+                <span className="text-gray-300">contato@colegiomaterna.com.br</span>
               </li>
             </ul>
           </div>

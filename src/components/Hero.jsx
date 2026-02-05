@@ -132,6 +132,8 @@ const Hero = () => {
                   className="w-full h-[500px] object-cover"
                   fetchpriority="high"
                   decoding="async"
+                  width="600"
+                  height="700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-turquesa/30 to-transparent" />
               </div>

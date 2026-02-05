@@ -122,10 +122,14 @@ const Estrutura = () => {
           exit={{ opacity: 0 }}
           className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
           onClick={closeLightbox}
+          role="dialog"
+          aria-modal="true"
+          aria-label="Visualização de imagem"
         >
           <button
             onClick={closeLightbox}
             className="absolute top-4 right-4 text-white hover:text-turquesa transition-colors"
+            aria-label="Fechar galeria"
           >
             <X size={32} />
           </button>
@@ -133,6 +137,7 @@ const Estrutura = () => {
           <button
             onClick={(e) => { e.stopPropagation(); prevImage(); }}
             className="absolute left-4 text-white hover:text-turquesa transition-colors"
+            aria-label="Imagem anterior"
           >
             <ChevronLeft size={48} />
           </button>
@@ -150,12 +155,13 @@ const Estrutura = () => {
           <button
             onClick={(e) => { e.stopPropagation(); nextImage(); }}
             className="absolute right-4 text-white hover:text-turquesa transition-colors"
+            aria-label="Próxima imagem"
           >
             <ChevronRight size={48} />
           </button>
 
           <div className="absolute bottom-4 text-white text-center">
-            <h4 className="font-bold text-xl">{fotos[selectedImage].titulo}</h4>
+            <h3 className="font-bold text-xl">{fotos[selectedImage].titulo}</h3>
             <p className="text-white/80">{fotos[selectedImage].descricao}</p>
           </div>
         </motion.div>

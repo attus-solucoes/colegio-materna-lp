@@ -105,15 +105,16 @@ const Depoimentos = () => {
           </motion.div>
 
           {/* Navigation */}
-          <div className="flex justify-center items-center gap-4 mt-8">
+          <div className="flex justify-center items-center gap-4 mt-8" role="navigation" aria-label="Navegação de depoimentos">
             <button
               onClick={prevSlide}
               className="w-12 h-12 bg-white/20 hover:bg-white/30 rounded-full flex items-center justify-center text-white transition-colors"
+              aria-label="Depoimento anterior"
             >
               <ChevronLeft size={24} />
             </button>
             
-            <div className="flex gap-2">
+            <div className="flex gap-2" role="tablist">
               {depoimentos.map((_, index) => (
                 <button
                   key={index}
@@ -121,6 +122,9 @@ const Depoimentos = () => {
                   className={`w-3 h-3 rounded-full transition-all ${
                     index === currentIndex ? 'bg-white w-8' : 'bg-white/40'
                   }`}
+                  aria-label={`Ir para depoimento ${index + 1}`}
+                  aria-selected={index === currentIndex}
+                  role="tab"
                 />
               ))}
             </div>
@@ -128,6 +132,7 @@ const Depoimentos = () => {
             <button
               onClick={nextSlide}
               className="w-12 h-12 bg-white/20 hover:bg-white/30 rounded-full flex items-center justify-center text-white transition-colors"
+              aria-label="Próximo depoimento"
             >
               <ChevronRight size={24} />
             </button>
