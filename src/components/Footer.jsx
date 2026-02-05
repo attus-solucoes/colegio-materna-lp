@@ -66,7 +66,7 @@ const Footer = () => {
             © {currentYear} Colégio Materna Kids. Todos os direitos reservados.
           </p>
           <p className="text-gray-400 text-sm flex items-center gap-1">
-            Feito com <Heart size={14} className="text-rosa fill-rosa" /> em Itajubá
+            Desenvolvido por <a href="https://solviahub.com.br" target="_blank" rel="noopener noreferrer" className="text-turquesa hover:text-white transition-colors font-medium">Solvia Hub 🦊</a>
           </p>
         </div>
       </div>

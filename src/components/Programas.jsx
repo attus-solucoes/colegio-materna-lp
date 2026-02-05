@@ -30,6 +30,7 @@ const Programas = () => {
       horario: "06h45 às 12h",
       cor: "amarelo",
       bgColor: "bg-amarelo",
+      textColor: "text-cinza",
       lightBg: "bg-amarelo/10",
       descricao: "Atendimento recreativo, acolhedor, lúdico e assistencialista focado no brincar e interagir.",
       beneficios: [
@@ -45,9 +46,10 @@ const Programas = () => {
       nome: "Programa Regular",
       subtitulo: "Projeto Cubo Mágico",
       horario: "13h15 às 17h15",
-      cor: "laranja",
-      bgColor: "bg-laranja",
-      lightBg: "bg-laranja/10",
+      cor: "rosa",
+      bgColor: "bg-rosa",
+      textColor: "text-cinza",
+      lightBg: "bg-rosa/10",
       descricao: "Atendimento estruturado de cunho pedagógico, personalizado, assistencialista e alfabetizador.",
       beneficios: [
         "Estação de Inglês",
@@ -105,17 +107,17 @@ const Programas = () => {
                 </div>
               )}
               
-              <div className={`${programa.bgColor} p-6 text-white`}>
+              <div className={`${programa.bgColor} p-6 ${programa.textColor || 'text-white'}`}>
                 <div className="flex items-center gap-3 mb-3">
                   {programa.icon}
                   <div>
                     <h3 className="text-xl font-bold">{programa.nome}</h3>
                     {programa.subtitulo && (
-                      <p className="text-white/80 text-sm">{programa.subtitulo}</p>
+                      <p className={`${programa.textColor ? 'text-cinza/70' : 'text-white/80'} text-sm`}>{programa.subtitulo}</p>
                     )}
                   </div>
                 </div>
-                <div className="flex items-center gap-2 text-white/90">
+                <div className={`flex items-center gap-2 ${programa.textColor ? 'text-cinza/80' : 'text-white/90'}`}>
                   <Clock size={16} />
                   <span className="font-medium">{programa.horario}</span>
                 </div>
@@ -137,7 +139,7 @@ const Programas = () => {
                   href="https://api.whatsapp.com/send/?phone=553536218735&text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20${encodeURIComponent(programa.nome)}"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`mt-6 block text-center ${programa.bgColor} text-white py-3 rounded-full font-semibold hover:opacity-90 transition-opacity`}
+                  className={`mt-6 block text-center ${programa.bgColor} ${programa.textColor || 'text-white'} py-3 rounded-full font-semibold hover:opacity-90 transition-opacity`}
                 >
                   Saiba Mais
                 </a>

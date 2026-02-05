@@ -9,34 +9,34 @@ const Estrutura = () => {
 
   const fotos = [
     {
-      url: "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&h=400&fit=crop&q=80",
+      url: "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=600&h=400&fit=crop&q=80",
       titulo: "Sala de Atividades",
       descricao: "Ambiente amplo e colorido"
     },
     {
-      url: "https://images.unsplash.com/photo-1576495199011-eb94736d05d6?w=600&h=400&fit=crop&q=80",
-      titulo: "Área Externa",
-      descricao: "Espaço para brincar ao ar livre"
+      url: "https://images.unsplash.com/photo-1544776193-352d25ca82cd?w=600&h=400&fit=crop&q=80",
+      titulo: "Espaço de Aprendizado",
+      descricao: "Momentos de descoberta"
     },
     {
-      url: "https://images.unsplash.com/photo-1567057419565-4349c49d8a04?w=600&h=400&fit=crop&q=80",
-      titulo: "Parquinho",
-      descricao: "Diversão segura para todas as idades"
+      url: "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=600&h=400&fit=crop&q=80",
+      titulo: "Área Recreativa",
+      descricao: "Diversão e aprendizado"
     },
     {
-      url: "https://images.unsplash.com/photo-1560440021-33f9b867899d?w=600&h=400&fit=crop&q=80",
-      titulo: "Biblioteca",
-      descricao: "Cantinho da leitura"
+      url: "https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?w=600&h=400&fit=crop&q=80",
+      titulo: "Cantinho da Leitura",
+      descricao: "Incentivo à imaginação"
     },
     {
-      url: "https://images.unsplash.com/photo-1564429238877-1790b696c06a?w=600&h=400&fit=crop&q=80",
-      titulo: "Sala do Berçário",
-      descricao: "Aconchego para os pequenos"
+      url: "https://images.unsplash.com/photo-1602052793312-b99c2a9ee797?w=600&h=400&fit=crop&q=80",
+      titulo: "Atividades Artísticas",
+      descricao: "Expressão e criatividade"
     },
     {
-      url: "https://images.unsplash.com/photo-1597074866923-dc0589150358?w=600&h=400&fit=crop&q=80",
-      titulo: "Refeitório",
-      descricao: "Refeições saudáveis"
+      url: "https://images.unsplash.com/photo-1571210862729-78a52d3779a2?w=600&h=400&fit=crop&q=80",
+      titulo: "Brincadeiras",
+      descricao: "Interação e socialização"
     }
   ];
 
